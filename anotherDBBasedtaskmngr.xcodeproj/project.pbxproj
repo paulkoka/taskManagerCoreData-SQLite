@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		2F356C6F20FF38C900FF3833 /* dataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F356C6E20FF38C900FF3833 /* dataManager.m */; };
 		2F356C7120FF4C0D00FF3833 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F356C7020FF4C0D00FF3833 /* CoreData.framework */; };
-		2F356C7420FF4CF300FF3833 /* KPITasktable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F356C7220FF4CF300FF3833 /* KPITasktable.xcdatamodeld */; };
-		2F356C7D20FF4F2B00FF3833 /* KPITasktable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F356C7C20FF4F2A00FF3833 /* KPITasktable.m */; };
 		2F356C8320FF505500FF3833 /* DataManagerForCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F356C8220FF505500FF3833 /* DataManagerForCoreData.m */; };
+		2F356C8620FF561500FF3833 /* KPITasktable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F356C8420FF561500FF3833 /* KPITasktable.xcdatamodeld */; };
 		DA2DD99A20F69FC800B52EB6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2DD99920F69FC800B52EB6 /* libsqlite3.tbd */; };
 		DAA2CEB720F6938000B190C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2CEB620F6938000B190C7 /* AppDelegate.m */; };
 		DAA2CEBD20F6938000B190C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA2CEBB20F6938000B190C7 /* Main.storyboard */; };
@@ -28,11 +27,9 @@
 		2F356C6D20FF38C900FF3833 /* dataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dataManager.h; sourceTree = "<group>"; };
 		2F356C6E20FF38C900FF3833 /* dataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dataManager.m; sourceTree = "<group>"; };
 		2F356C7020FF4C0D00FF3833 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2F356C7320FF4CF300FF3833 /* KPITasktable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KPITasktable.xcdatamodel; sourceTree = "<group>"; };
-		2F356C7B20FF4F2A00FF3833 /* KPITasktable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPITasktable.h; sourceTree = "<group>"; };
-		2F356C7C20FF4F2A00FF3833 /* KPITasktable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPITasktable.m; sourceTree = "<group>"; };
 		2F356C8120FF505500FF3833 /* DataManagerForCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagerForCoreData.h; sourceTree = "<group>"; };
 		2F356C8220FF505500FF3833 /* DataManagerForCoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManagerForCoreData.m; sourceTree = "<group>"; };
+		2F356C8520FF561500FF3833 /* KPITasktable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KPITasktable.xcdatamodel; sourceTree = "<group>"; };
 		DA2DD99920F69FC800B52EB6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DAA2CEB220F6938000B190C7 /* anotherDBBasedtaskmngr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anotherDBBasedtaskmngr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA2CEB520F6938000B190C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,8 +86,6 @@
 			children = (
 				DAA2CED220F698FF00B190C7 /* dbManager.h */,
 				DAA2CED320F698FF00B190C7 /* dbManager.m */,
-				2F356C8120FF505500FF3833 /* DataManagerForCoreData.h */,
-				2F356C8220FF505500FF3833 /* DataManagerForCoreData.m */,
 			);
 			name = SQLite;
 			sourceTree = "<group>";
@@ -98,6 +93,8 @@
 		2F05A86820FF376700FD59C4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				2F356C8120FF505500FF3833 /* DataManagerForCoreData.h */,
+				2F356C8220FF505500FF3833 /* DataManagerForCoreData.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -125,7 +122,7 @@
 		DAA2CEA920F6938000B190C7 = {
 			isa = PBXGroup;
 			children = (
-				2F356C7220FF4CF300FF3833 /* KPITasktable.xcdatamodeld */,
+				2F356C8420FF561500FF3833 /* KPITasktable.xcdatamodeld */,
 				DAA2CEB420F6938000B190C7 /* anotherDBBasedtaskmngr */,
 				DAA2CEB320F6938000B190C7 /* Products */,
 				DA2DD99820F69FC800B52EB6 /* Frameworks */,
@@ -162,8 +159,6 @@
 			children = (
 				DAA2CECE20F698BE00B190C7 /* TaskItem.h */,
 				DAA2CECF20F698BE00B190C7 /* TaskItem.m */,
-				2F356C7B20FF4F2A00FF3833 /* KPITasktable.h */,
-				2F356C7C20FF4F2A00FF3833 /* KPITasktable.m */,
 			);
 			name = customClasses;
 			sourceTree = "<group>";
@@ -238,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F356C7420FF4CF300FF3833 /* KPITasktable.xcdatamodeld in Sources */,
+				2F356C8620FF561500FF3833 /* KPITasktable.xcdatamodeld in Sources */,
 				DAA2CED720F6992700B190C7 /* editingTaskViewController.m in Sources */,
 				DAA2CEC520F6938200B190C7 /* main.m in Sources */,
 				DAA2CEB720F6938000B190C7 /* AppDelegate.m in Sources */,
@@ -247,7 +242,6 @@
 				DAA2CED420F698FF00B190C7 /* dbManager.m in Sources */,
 				DAA2CED020F698BE00B190C7 /* TaskItem.m in Sources */,
 				2F356C8320FF505500FF3833 /* DataManagerForCoreData.m in Sources */,
-				2F356C7D20FF4F2B00FF3833 /* KPITasktable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,12 +435,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2F356C7220FF4CF300FF3833 /* KPITasktable.xcdatamodeld */ = {
+		2F356C8420FF561500FF3833 /* KPITasktable.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2F356C7320FF4CF300FF3833 /* KPITasktable.xcdatamodel */,
+				2F356C8520FF561500FF3833 /* KPITasktable.xcdatamodel */,
 			);
-			currentVersion = 2F356C7320FF4CF300FF3833 /* KPITasktable.xcdatamodel */;
+			currentVersion = 2F356C8520FF561500FF3833 /* KPITasktable.xcdatamodel */;
 			path = KPITasktable.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

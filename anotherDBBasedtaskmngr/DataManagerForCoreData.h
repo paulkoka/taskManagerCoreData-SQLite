@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AppDelegate.h"
-#import "KPITasktable.h"
 #import "TaskItem.h"
+
 
 
 @interface DataManagerForCoreData : NSObject
